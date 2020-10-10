@@ -19,18 +19,15 @@ function Post({ displayName, username, verified, text, image, avatar }) {
             <h3>
               Anjali babe{" "}
               <span className="post__headerSpecial">
-                <VerifiedUserIcon className="post__badge" /> @priyanjalii01
+                <VerifiedUserIcon className="post__badge" /> @furiosa20
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>I challenge you to do daily learning coding tasks</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif"
-          alt=""
-        />
+        <img src={image} alt="" />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon />
